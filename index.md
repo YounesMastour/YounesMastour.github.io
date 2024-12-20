@@ -17,4 +17,4 @@ For a link to my resume visit:
 Feel free to reach out to me via email at <!--mastoury2021@gmail.com-->
 
 Thank you for visiting!
-<!--To take off comment just delete <!-- before the comment and --> after the comment-->
+<!--To take off comment just delete <!-- before the comment and --> <!-- after the comment-->
