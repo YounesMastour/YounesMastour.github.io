@@ -5,7 +5,7 @@ Hi there! I'm Younes, a passionate Canadian high schooler with a goal in mind, t
 This website is all about my projects, skills, and experiences as a highschooler. From academics to extracurriculars, explore my work and get to know my journey.
 
 ## Projects
-- Academics: Currently taking Computer Engineering, Science, English and Math courses
+- Academics: Currently taking Computer Engineering, Science, English and Math courses at Port Credit Secondary School.
 - Lifeguard project: Well on my way to become a lifeguard. Currently done my Canadian National Lifeguard Certification and Standard First Aid (CPR C) and soon to take my Instructor's Course.
 
 ## Resume
