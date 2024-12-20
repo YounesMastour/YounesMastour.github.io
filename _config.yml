@@ -3,3 +3,4 @@ plugins:
   - jekyll-remote-theme
 include:
   - custom.css
+title: "Welcome to Younes Mastour's Website"
