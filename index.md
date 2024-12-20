@@ -15,4 +15,5 @@ For a link to my resume visit:
 
 ## Contact
 Feel free to reach out to me via email at mastoury2021@gmail.com
+
 Thank you for visiting!
