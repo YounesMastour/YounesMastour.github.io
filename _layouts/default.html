@@ -30,6 +30,9 @@ layout: default
         overflow: hidden;
         border-right: 3px solid;
         animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+        width: 80%; /* Proportional width */
+        max-width: 800px; /* Max width for larger screens */
+        margin: 0 auto; /* Center on larger screens */
       }
       @keyframes typing {
         from { width: 0; }
