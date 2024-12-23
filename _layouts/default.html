@@ -28,19 +28,19 @@ layout: default
       .typing-animation {
         white-space: nowrap;
         overflow: hidden;
-        border-right: 3px solid;
-        animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
-        width: 80%; /* Proportional width */
-        max-width: 800px; /* Max width for larger screens */
-        margin: 0 auto; /* Center on larger screens */
+        border-right: 5px solid;
+        width: 80%;
+        max-width: 800px;
+        margin: 0 auto;
+        animation: 
+          typing 2s steps(15), 
+          blink-caret 0.4s step-end infinite alternate;
       }
       @keyframes typing {
-        from { width: 0; }
-        to { width: 100%; }
+        from { width: 0 }
       }
       @keyframes blink-caret {
-        from, to { border-color: transparent; }
-        50% { border-color: black; }
+        50% { border-color: transparent}
       }
     </style>
     {% include head-custom.html %}
