@@ -13,26 +13,23 @@ layout: default
       body, html {
         margin: 0;
         padding: 0;
+        height: 100%;
         width: 100%;
       }
       * {
         border: none;
         outline: none;
       }
-      .typing-animation-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50vh; /* Adjusts the height of the animation container */
-        background-color: #f0f0f0; /* Optional: Adjust background color */
+      header {
+        border: none;
+        margin: 0;
+        padding: 0;
       }
       .typing-animation {
         white-space: nowrap;
         overflow: hidden;
         border-right: 3px solid;
         animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
-        font-size: calc(1em + 1vw); /* Responsive font size */
-        max-width: 80%; /* Proportional width */
       }
       @keyframes typing {
         from { width: 0; }
@@ -41,3 +38,29 @@ layout: default
       @keyframes blink-caret {
         from, to { border-color: transparent; }
         50% { border-color: black; }
+      }
+    </style>
+    {% include head-custom.html %}
+    {% seo %}
+    <title>Younes Mastour's website</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="typing-animation">Welcome to Younes Mastour's website</h1>
+        <section id="downloads">
+          {% if site.show_downloads %}
+            <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
+            <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
+          {% endif %}
+        </section>
+      </div>
+    </header>
+    <div class="container">
+      <section id="main_content">
+        {{ content }}
+      </section>
+    </div>
+  </body>
+</html>
