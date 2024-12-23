@@ -23,7 +23,7 @@ layout: default
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 50vh; /* Adjusts the height of the animation container */
         background-color: #f0f0f0; /* Optional: Adjust background color */
       }
       .typing-animation {
@@ -41,24 +41,3 @@ layout: default
       @keyframes blink-caret {
         from, to { border-color: transparent; }
         50% { border-color: black; }
-      }
-      .content {
-        padding: 20px;
-        max-width: 800px;
-        margin: auto;
-      }
-    </style>
-    {% include head-custom.html %}
-    {% seo %}
-    <title>Younes Mastour's website</title>
-  </head>
-
-  <body>
-    <div class="typing-animation-container">
-      <h1 class="typing-animation">Welcome to Younes Mastour's website</h1>
-    </div>
-    <div class="content">
-      {{ content }}
-    </div>
-  </body>
-</html>
