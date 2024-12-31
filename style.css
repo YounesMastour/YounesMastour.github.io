@@ -17,7 +17,7 @@ header {
   white-space: nowrap;
   overflow: hidden;
   border-right: 5px solid;
-  width: 66%;
+  width: 64%;
   max-width: 800px;
   margin: 0 auto;
   font-family: inherit;
@@ -27,7 +27,7 @@ header {
 }
 @keyframes typing {
   from { width: 0; }
-  to { width: 66%; }
+  to { width: 64%; }
 }
 @keyframes blink-caret {
   50% { border-color: transparent; }
