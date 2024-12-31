@@ -47,4 +47,3 @@ layout: default
     </section>
   </div>
 </header>
-<link rel="stylesheet" href="{{ 'style.css?v=' | append: site.github.build_revision | relative_url }}">
