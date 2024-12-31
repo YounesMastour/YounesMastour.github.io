@@ -1,1 +1,35 @@
-
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+      }
+      * {
+        border: none;
+        outline: none;
+      }
+      header {
+        border: none;
+        margin: 0;
+        padding: 0;
+      }
+      .typing-animation {
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 5px solid;
+        width: 66%;
+        max-width: 800px;
+        margin: 0 auto;
+        animation: 
+          typing 2.6s steps(34), 
+          blink-caret 0.75s step-end infinite alternate;
+      }
+      @keyframes typing {
+        from { width: 0; }
+        to { width: 66%; }
+      }
+      @keyframes blink-caret {
+        50% { border-color: transparent; }
+      }
+    </style>
