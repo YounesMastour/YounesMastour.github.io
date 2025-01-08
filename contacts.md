@@ -1,5 +1,5 @@
 ---
-title: How to Reach Me
+title: Contacts
 permalink: /contacts/
 ---
 
