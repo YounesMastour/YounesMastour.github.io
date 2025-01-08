@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /
+# Delete both lines to make this website searchable, there is also another step at _layouts/defualt.html
