@@ -1,5 +1,6 @@
 ---
-title: Auto Watering System
+title: AWS
+
 permalink: /autowateringsystem/
 ---
 
