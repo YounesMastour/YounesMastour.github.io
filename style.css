@@ -25,10 +25,20 @@ header {
     typing 2.6s steps(34), 
     blink-caret 0.75s step-end infinite alternate;
 }
+
 @keyframes typing {
   from { width: 0; }
   to { width: 64.5%; }
 }
+
 @keyframes blink-caret {
   50% { border-color: transparent; }
+}
+
+@media (max-width: 768px) {
+  .typing-animation {
+    animation: none;
+    border: none;
+    width: 100%;
+  }
 }
