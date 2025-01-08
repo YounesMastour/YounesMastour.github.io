@@ -31,17 +31,20 @@
         float: left;
         overflow: hidden;
       }
+      .dropdown .dropbtn {
+        background-color: #000; /* Set background color to black */
+      }
       .dropdown-content {
         display: none;
         position: absolute;
         background-color: #000;
-        min-width: 160px;
+        min-width: 100%; /* Make the dropdown content same width as the button */
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
       }
       .dropdown-content a {
         float: none;
-        color: #000000;
+        color: #000000; /* Set text color to black */
         padding: 12px 16px;
         text-decoration: none;
         display: block;
@@ -66,7 +69,7 @@
       <div class="navbar">
         <a href="{{ site.baseurl }}/aboutme/">About Me</a>
         <div class="dropdown">
-          <button class="dropbtn">Projects v
+          <button class="dropbtn">Projects 
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
