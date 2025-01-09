@@ -1,44 +1,54 @@
-body, html {
+/* General navigation styles */
+nav ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
+  display: flex;
 }
-* {
-  border: none;
-  outline: none;
+
+nav ul li {
+  position: relative;
+  margin-right: 20px;
 }
-header {
-  border: none;
-  margin: 0;
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 160px;
   padding: 0;
 }
-.typing-animation {
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 5px solid;
-  width: 64.5%;
-  max-width: 800px;
-  margin: 0 auto;
-  font-family: inherit;
-  animation: 
-    typing 2.6s steps(34), 
-    blink-caret 0.75s step-end infinite alternate;
+
+.dropdown-content li {
+  margin: 0;
 }
 
-@keyframes typing {
-  from { width: 0; }
-  to { width: 64.5%; }
+.dropdown-content li a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
 }
 
-@keyframes blink-caret {
-  50% { border-color: transparent; }
+.dropdown-content li a:hover {
+  background-color: #ddd;
 }
 
-@media (max-width: 768px) {
-  .typing-animation {
-    animation: none;
-    border: none;
-    width: 100%;
-  }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.invisible {
+  display: none;
 }
