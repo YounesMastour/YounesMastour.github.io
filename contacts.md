@@ -1,6 +1,7 @@
 ---
 title: Contacts
 permalink: /contacts/
+layout: default
 ---
 
 # How to Reach Me
