@@ -1,7 +1,7 @@
 ---
 title: AWS
-
 permalink: /autowateringsystem/
+layout: default
 ---
 
 # Auto Watering System
