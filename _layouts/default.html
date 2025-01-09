@@ -49,4 +49,79 @@
     .dropdown-content {
       display: none;
       position: absolute;
-      top: 100
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Typing animation styling */
+    .typing-animation {
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 5px solid white;
+      width: 64.5%;
+      max-width: 800px;
+      margin: 20px auto;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      animation: typing 2.6s steps(34), blink-caret 0.75s step-end infinite alternate;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 64.5%; }
+    }
+
+    @keyframes blink-caret {
+      50% { border-color: transparent; }
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+      }
+      .dropdown-content {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <a href="/">Home</a>
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Projects &#x25BC;</a>
+      <div class="dropdown-content">
+        <a href="/school/">School</a>
+        <a href="/autowateringsystem/">AWS</a>
+      </div>
+    </div>
+    <a href="/aboutme/">About Me</a>
+    <a href="/contacts/">Contacts</a>
+    <a href="/resume/">Resume</a>
+  </header>
+  
+  <main>
+    <div class="typing-animation">Welcome to Younes Mastour's Website</div>
+    {{ content }}
+  </main>
+</body>
+</html>
