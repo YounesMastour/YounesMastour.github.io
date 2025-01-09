@@ -1,6 +1,7 @@
 <!-- ---
 title: Lifeguard Projects
 permalink: /lifeguard/
+layout: default
 ---
 
 # Lifeguard Projects
