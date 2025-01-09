@@ -5,6 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    /* General body styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar styling */
+    .navbar {
+      display: flex;
+      background-color: #333;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .navbar button,
+    .navbar a {
+      color: white;
+      background-color: #333;
+      border: none;
+      padding: 14px 16px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .navbar button:hover,
+    .navbar a:hover,
+    .dropdown-content a:hover {
+      background-color: #111;
+    }
+
+    /* Dropdown styling */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Typing animation styling */
+    .typing-animation {
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 5px solid white;
+      width: 64.5%;
+      max-width: 800px;
+      margin: 20px auto;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      animation: typing 2.6s steps(34), blink-caret 0.75s step-end infinite alternate;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 64.5%; }
+    }
+
+    @keyframes blink-caret {
+      50% { border-color: transparent; }
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+      }
+      .dropdown-content {
+        position: static;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="navbar">
@@ -22,10 +120,7 @@
   </header>
   
   <main>
-    {% if page.url == "/" %}
-      <!-- Only show typing animation on homepage -->
-      <div class="typing-animation">Welcome to Younes Mastour's Website</div>
-    {% endif %}
+    <div class="typing-animation">Welcome to Younes Mastour's Website</div>
     {{ content }}
   </main>
 </body>
