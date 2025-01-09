@@ -1,6 +1,7 @@
 ---
 title: School Projects
 permalink: /school/
+layout: default
 ---
 
 # School Projects
