@@ -64,6 +64,9 @@
       .dropdown .dropbtn:hover, .dropdown-content a:hover {
         box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.6);
       }
+      .dropdown-content .hidden {
+        display: none;
+      }
     </style>
   </head>
 
@@ -79,6 +82,7 @@
           <div class="dropdown-content">
             <a href="{{ site.baseurl }}/school/">School</a>
             <a href="{{ site.baseurl }}/autowateringsystem/">AWS</a>
+            <a href="#" class="hidden">Lifeguard</a>
           </div>
         </div>
         <a href="{{ site.baseurl }}/resume/">Resume</a>
