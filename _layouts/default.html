@@ -13,29 +13,35 @@
       padding: 0;
     }
 
-    /* Navbar styles */
+    /* Navbar styling */
     .navbar {
       display: flex;
       background-color: #333;
       padding: 0;
       margin: 0;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
     }
 
-    .navbar button {
+    .navbar button,
+    .navbar a {
       color: white;
       background-color: #333;
       border: none;
       padding: 14px 16px;
-      cursor: pointer;
       font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
     }
 
-    .navbar button:hover {
+    .navbar button:hover,
+    .navbar a:hover,
+    .dropdown-content a:hover {
       background-color: #111;
     }
 
+    /* Dropdown styling */
     .dropdown {
       position: relative;
     }
@@ -43,67 +49,4 @@
     .dropdown-content {
       display: none;
       position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #f9f9f9;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      min-width: 160px;
-      z-index: 1;
-    }
-
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #ddd;
-    }
-
-    .show {
-      display: block;
-    }
-  </style>
-</head>
-<body>
-  <header class="navbar">
-    <div>
-      <button onclick="navigateTo('/')">Home</button>
-      <div class="dropdown">
-        <button onclick="toggleDropdown()">Projects &#x25BC;</button>
-        <div class="dropdown-content">
-          <a href="/school/">School</a>
-          <a href="/autowateringsystem/">AWS</a>
-        </div>
-      </div>
-      <button onclick="navigateTo('/aboutme/')">About Me</button>
-      <button onclick="navigateTo('/contacts/')">Contacts</button>
-      <button onclick="navigateTo('/resume/')">Resume</button>
-    </div>
-  </header>
-  <main>
-    {{ content }}
-  </main>
-
-  <script>
-    function toggleDropdown() {
-      const dropdownContent = document.querySelector('.dropdown-content');
-      dropdownContent.classList.toggle('show');
-    }
-
-    function navigateTo(path) {
-      window.location.href = path;
-    }
-
-    // Close dropdown if clicked outside
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropdown button')) {
-        const dropdowns = document.querySelectorAll('.dropdown-content');
-        dropdowns.forEach((dropdown) => dropdown.classList.remove('show'));
-      }
-    };
-  </script>
-</body>
-</html>
+      top: 100
