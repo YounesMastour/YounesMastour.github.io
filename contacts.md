@@ -4,6 +4,6 @@ permalink: /contacts/
 ---
 
 # How to Reach Me
-Feel free to reach out to me via email at mastoury2021@gmail.com
+Feel free to reach out to me via email at 
 
 Thank you for visiting!
