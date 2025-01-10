@@ -65,7 +65,7 @@ body, html {
   white-space: nowrap;
   overflow: hidden;
   border-right: 5px solid #a6e22e;
-  width: 66%;
+  width: 50%;
   max-width: 800px;
   margin: 20px auto;
   color: #a6e22e;
@@ -77,7 +77,7 @@ body, html {
 
 @keyframes typing {
   from { width: 0; }
-  to { width: 66%; }Welcome to Younes Mastour's 
+  to { width: 50%; }Welcome to Younes Mastour's 
 }
 
 @keyframes blink-caret {
