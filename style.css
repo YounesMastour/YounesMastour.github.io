@@ -72,7 +72,7 @@ body, html {
   font-family: "Monaco", monospace;
   font-size: 30px;
   text-align: center;
-  animation: typing 2s steps(50), blink-caret 0.75s step-end infinite alternate;
+  animation: typing 4s steps(50), blink-caret 0.75s step-end infinite alternate;
 }
 
 @keyframes typing {
