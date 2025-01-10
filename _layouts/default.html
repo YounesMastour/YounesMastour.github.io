@@ -122,7 +122,9 @@
   </header>
   
   <main>
-    <div class="typing-animation">Welcome to Younes Mastour's Website</div>
+    {% if page.url == "/" %}
+      <div class="typing-animation">Welcome to Younes Mastour's Website</div>
+    {% endif %}
     {{ content }}
   </main>
 </body>
