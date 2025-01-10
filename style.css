@@ -72,12 +72,12 @@ body, html {
   font-family: "Monaco", monospace;
   font-size: 30px;
   text-align: center;
-  animation: typing 2s steps(34), blink-caret 0.75s step-end infinite alternate;
+  animation: typing 2s steps(50), blink-caret 0.75s step-end infinite alternate;
 }
 
 @keyframes typing {
   from { width: 0; }
-  to { width: 66%; }
+  to { width: 66%; }Welcome to Younes Mastour's 
 }
 
 @keyframes blink-caret {
