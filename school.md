@@ -5,4 +5,4 @@ layout: default
 ---
 
 # School Projects
-Currently taking Computer Engineering, Science, English, and Math courses at Port Credit Secondary School.
+Currently taking Functions, Business, Civics and Careers and Manufacturing courses at Port Credit Secondary School.
